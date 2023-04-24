@@ -1,44 +1,47 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Todo App</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen">
   </head>
   <body>
-    <div class="aaa">
+    <h1 class="visually-hidden">Todo App</h1>
+    <header class="header">
       <img src="./eisenhower-matrix.jpg" alt="The Eisenhower matrix picture">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
+      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="page">
+      <div id="add-task">
         <label for="new-task">Add Item</label>
         <div class="task-row-wrapper">
           <input id="new-task" class="task" type="text">
           <button type="button">Add</button>
         </div>
-      </p>
-      <h3>Todo</h3>
-      <ul id="incompleteTasks">
+      </div>
+      <h2>Todo</h2>
+      <ul id="incomplete-tasks">
         <li>
           <input type="checkbox">
           <label class="task">Pay Bills</label>
           <input class="task" type="text">
           <button class="edit" type="button">Edit</button>
           <button class="delete" type="button">
-            <img src="./remove.svg" aria-hidden="true">
+            <img src="./remove.svg" alt="" aria-hidden="true">
           </button>
         </li>
-        <li class="editMode">
+        <li class="edit-mode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
           <input class="task" type="text" value="Go Shopping">
           <button class="edit" type="button">Save</button>
           <button class="delete" type="button">
-            <img src="./remove.svg" aria-hidden="true">
+            <img src="./remove.svg" alt="" aria-hidden="true">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h2>Completed</h2>
       <ul id="completed-tasks">
         <li>
           <input type="checkbox" checked>
@@ -46,11 +49,11 @@
           <input class="task" type="text">
           <button class="edit" type="button">Edit</button>
           <button class="delete" type="button">
-            <img src="./remove.svg" aria-hidden="true">
+            <img src="./remove.svg" alt="" aria-hidden="true">
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
